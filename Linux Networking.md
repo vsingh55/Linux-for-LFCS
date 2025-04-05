@@ -1,4 +1,3 @@
-
 # Linux Networking Comprehensive Guide
 
 ## **1. IPv4, IPv6, and CIDR**
@@ -309,8 +308,6 @@ sudo ufw allow from 192.168.1.100 to any port 22
 sudo ufw enable
 ```
 
----
-
 ### **2. Scenario: Configure a Reverse Proxy for a Web Server**  
 **Task**: Redirect traffic from `Nginx (port 80)` to an internal server at `10.0.0.5:8080`.  
 **Solution**:  
@@ -328,8 +325,6 @@ sudo ufw enable
    sudo systemctl reload nginx
    ```
 
----
-
 ### **3. Scenario: Troubleshoot DNS Resolution Failure**  
 **Task**: Fix DNS resolution for `example.com`.  
 **Steps**:  
@@ -339,8 +334,6 @@ sudo ufw enable
    nslookup example.com 8.8.8.8  # Use Google DNS
    ```  
 3. If resolved, update nameserver in `/etc/resolv.conf`.  
-
----
 
 ### **4. Scenario: Set Up IPv6 Address**  
 **Task**: Assign `2001:db8::1/64` to interface `enp0s3`.  
@@ -359,8 +352,6 @@ sudo ufw enable
    sudo netplan apply
    ```
 
----
-
 ### **5. Scenario: Bond Two Interfaces in Active-Backup Mode**  
 **Task**: Ensure failover if `enp0s3` fails.  
 **Solution**:  
@@ -377,8 +368,6 @@ sudo ufw enable
    sudo netplan apply
    ```
 
----
-
 ### **6. Scenario: Block ICMP (Ping) Requests**  
 **Task**: Prevent the server from responding to pings.  
 **Solution**:  
@@ -387,8 +376,6 @@ sudo sysctl -w net.ipv4.icmp_echo_ignore_all=1
 # Make permanent:
 sudo nano /etc/sysctl.conf  # Add: net.ipv4.icmp_echo_ignore_all=1
 ```
-
----
 
 ### **7. Scenario: Diagnose High Network Latency**  
 **Task**: Identify delays in reaching `example.com`.  
@@ -401,8 +388,6 @@ sudo nano /etc/sysctl.conf  # Add: net.ipv4.icmp_echo_ignore_all=1
    ```bash
    ping -c 100 example.com
    ```
-
----
 
 ### **8. Scenario: Configure NTP for Time Sync**  
 **Task**: Sync time with `pool.ntp.org`.  
@@ -417,8 +402,6 @@ sudo nano /etc/sysctl.conf  # Add: net.ipv4.icmp_echo_ignore_all=1
    sudo systemctl restart systemd-timesyncd
    ```
 
----
-
 ### **9. Scenario: Allow HTTP/HTTPS Only**  
 **Task**: Block all traffic except ports 80/443.  
 **Solution**:  
@@ -428,8 +411,6 @@ sudo ufw allow 80
 sudo ufw allow 443
 sudo ufw enable
 ```
-
----
 
 ### **10. Scenario: Resolve "Port Already in Use" Error**  
 **Task**: Free port 80 occupied by an unknown process.  
