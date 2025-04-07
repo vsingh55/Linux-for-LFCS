@@ -41,3 +41,6 @@ This breakdown ensures that candidates are well-versed in all critical aspects o
 
 ## Repo Structure
 For each section there is a dedicated md file.
+
+
+> **Note**: For detailed info on various topics of Linux  visit [my Linux blog series](https://blogs.vijaysingh.cloud/series/linux-a2z).
