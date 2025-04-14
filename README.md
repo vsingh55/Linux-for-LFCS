@@ -40,7 +40,18 @@ The LFCS exam covers the following domains with their respective weightage:
 This breakdown ensures that candidates are well-versed in all critical aspects of Linux system administration. Preparing for the LFCS exam involves hands-on practice and a deep understanding of Linux concepts.
 
 ## Repo Structure
-For each section there is a dedicated md file.
+```bash
+.
+├── Notes
+│   ├── Linux Deployment and Operations.md
+│   ├── Linux Essential Commands.md
+│   ├── Linux Networking.md
+│   ├── Linux Storage and Virtualization.md
+│   └── Linux User and Group Management.md
+├── README.md
+└── Scenario-based-practice-questions
+    └── quesions.md
+```
 
 
 > **Note**: For detailed info on various topics of Linux  visit [my Linux blog series](https://blogs.vijaysingh.cloud/series/linux-a2z).
